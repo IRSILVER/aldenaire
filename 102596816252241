@@ -1,1 +1,1347 @@
   
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 96 | Scripts: 1 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.102596816252241
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[102596816252241]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.102596816252241.over1
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["Active"] = true;
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
+G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2"]["Size"] = UDim2.new(0, 609, 0, 503);
+G2L["2"]["Position"] = UDim2.new(0.53231, 0, 0.53535, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[over1]];
+
+
+-- StarterGui.102596816252241.over1.UIStroke
+G2L["3"] = Instance.new("UIStroke", G2L["2"]);
+G2L["3"]["Thickness"] = 3;
+G2L["3"]["Color"] = Color3.fromRGB(27, 27, 27);
+
+
+-- StarterGui.102596816252241.over1.UICorner
+G2L["4"] = Instance.new("UICorner", G2L["2"]);
+
+
+
+-- StarterGui.102596816252241.over1.line
+G2L["5"] = Instance.new("Frame", G2L["2"]);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["5"]["Size"] = UDim2.new(0, 609, 0, 3);
+G2L["5"]["Position"] = UDim2.new(-0.0004, 0, 0.06272, 0);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Name"] = [[line]];
+
+
+-- StarterGui.102596816252241.over1.title
+G2L["6"] = Instance.new("TextLabel", G2L["2"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["ZIndex"] = 2;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextSize"] = 15;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["RichText"] = true;
+G2L["6"]["Size"] = UDim2.new(0, 187, 0, 29);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[Aldenaire | Merge Soldiers]];
+G2L["6"]["Name"] = [[title]];
+
+
+-- StarterGui.102596816252241.over1.close
+G2L["7"] = Instance.new("TextButton", G2L["2"]);
+G2L["7"]["TextWrapped"] = true;
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["TextScaled"] = true;
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["Size"] = UDim2.new(0, 34, 0, 21);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[X]];
+G2L["7"]["Name"] = [[close]];
+G2L["7"]["Position"] = UDim2.new(0.92023, 0, 0.00895, 0);
+
+
+-- StarterGui.102596816252241.over1.min
+G2L["8"] = Instance.new("TextButton", G2L["2"]);
+G2L["8"]["TextWrapped"] = true;
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextScaled"] = true;
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["BackgroundTransparency"] = 1;
+G2L["8"]["Size"] = UDim2.new(0, 34, 0, 21);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[-]];
+G2L["8"]["Name"] = [[min]];
+G2L["8"]["Position"] = UDim2.new(0.85409, 0, 0.00895, 0);
+
+
+-- StarterGui.102596816252241.over1.Tabselection
+G2L["9"] = Instance.new("Frame", G2L["2"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["9"]["Size"] = UDim2.new(0, 154, 0, 451);
+G2L["9"]["Position"] = UDim2.new(0, 12, 0, 43);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Name"] = [[Tabselection]];
+
+
+-- StarterGui.102596816252241.over1.Tabselection.Main
+G2L["a"] = Instance.new("TextButton", G2L["9"]);
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextSize"] = 18;
+G2L["a"]["AutoButtonColor"] = false;
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["a"]["Size"] = UDim2.new(0, 154, 0, 42);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[Main]];
+G2L["a"]["Name"] = [[Main]];
+G2L["a"]["Position"] = UDim2.new(0, 0, -0.00108, 0);
+
+
+-- StarterGui.102596816252241.over1.Tabselection.Main.active
+G2L["b"] = Instance.new("Frame", G2L["a"]);
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["Size"] = UDim2.new(0, 3, 0, 41);
+G2L["b"]["Position"] = UDim2.new(0, 0, 0.01156, 0);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Name"] = [[active]];
+
+
+-- StarterGui.102596816252241.over1.Tabselection.Main.UICorner
+G2L["c"] = Instance.new("UICorner", G2L["a"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tabselection.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["9"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tabselection.Credits
+G2L["e"] = Instance.new("TextButton", G2L["9"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextSize"] = 18;
+G2L["e"]["AutoButtonColor"] = false;
+G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["Size"] = UDim2.new(0, 154, 0, 42);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[Credits]];
+G2L["e"]["Name"] = [[Credits]];
+G2L["e"]["Position"] = UDim2.new(0, 0, 0.9058, 0);
+
+
+-- StarterGui.102596816252241.over1.Tabselection.Credits.active
+G2L["f"] = Instance.new("Frame", G2L["e"]);
+G2L["f"]["Visible"] = false;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["Size"] = UDim2.new(0, 3, 0, 42);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Name"] = [[active]];
+
+
+-- StarterGui.102596816252241.over1.Tabselection.Credits.UICorner
+G2L["10"] = Instance.new("UICorner", G2L["e"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tabselection.Player
+G2L["11"] = Instance.new("TextButton", G2L["9"]);
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextSize"] = 18;
+G2L["11"]["AutoButtonColor"] = false;
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["11"]["Size"] = UDim2.new(0, 154, 0, 42);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[Player]];
+G2L["11"]["Name"] = [[Player]];
+G2L["11"]["Position"] = UDim2.new(0, 0, 0.09205, 0);
+
+
+-- StarterGui.102596816252241.over1.Tabselection.Player.active
+G2L["12"] = Instance.new("Frame", G2L["11"]);
+G2L["12"]["Visible"] = false;
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["Size"] = UDim2.new(0, 3, 0, 41);
+G2L["12"]["Position"] = UDim2.new(0, 0, 0.01156, 0);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Name"] = [[active]];
+
+
+-- StarterGui.102596816252241.over1.Tabselection.Player.UICorner
+G2L["13"] = Instance.new("UICorner", G2L["11"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab1
+G2L["14"] = Instance.new("Frame", G2L["2"]);
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["14"]["Size"] = UDim2.new(0, 418, 0, 451);
+G2L["14"]["Position"] = UDim2.new(0, 177, 0, 42);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Name"] = [[Tab1]];
+
+
+-- StarterGui.102596816252241.over1.Tab1.UICorner
+G2L["15"] = Instance.new("UICorner", G2L["14"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab1.mamount
+G2L["16"] = Instance.new("TextBox", G2L["14"]);
+G2L["16"]["CursorPosition"] = -1;
+G2L["16"]["Name"] = [[mamount]];
+G2L["16"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["TextWrapped"] = true;
+G2L["16"]["TextSize"] = 14;
+G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["16"]["PlaceholderText"] = [[Enter Amount]];
+G2L["16"]["Size"] = UDim2.new(0, 380, 0, 46);
+G2L["16"]["Position"] = UDim2.new(0.04545, 0, 0.03548, 0);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["Text"] = [[]];
+
+
+-- StarterGui.102596816252241.over1.Tab1.mamount.UICorner
+G2L["17"] = Instance.new("UICorner", G2L["16"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab1.mclick
+G2L["18"] = Instance.new("TextButton", G2L["14"]);
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["TextSize"] = 14;
+G2L["18"]["AutoButtonColor"] = false;
+G2L["18"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18"]["Size"] = UDim2.new(0, 162, 0, 39);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Text"] = [[Give Cash]];
+G2L["18"]["Name"] = [[mclick]];
+G2L["18"]["Position"] = UDim2.new(0.0933, 0, 0.15635, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab1.mclick.UICorner
+G2L["19"] = Instance.new("UICorner", G2L["18"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab1.mclick.UIStroke
+G2L["1a"] = Instance.new("UIStroke", G2L["18"]);
+G2L["1a"]["Thickness"] = 3;
+G2L["1a"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["1a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab1.pclick
+G2L["1b"] = Instance.new("TextButton", G2L["14"]);
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["TextSize"] = 14;
+G2L["1b"]["AutoButtonColor"] = false;
+G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1b"]["Size"] = UDim2.new(0, 162, 0, 39);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Text"] = [[Give Parts]];
+G2L["1b"]["Name"] = [[pclick]];
+G2L["1b"]["Position"] = UDim2.new(0.51435, 0, 0.15635, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab1.pclick.UICorner
+G2L["1c"] = Instance.new("UICorner", G2L["1b"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab1.pclick.UIStroke
+G2L["1d"] = Instance.new("UIStroke", G2L["1b"]);
+G2L["1d"]["Thickness"] = 3;
+G2L["1d"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["1d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab1.line
+G2L["1e"] = Instance.new("Frame", G2L["14"]);
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
+G2L["1e"]["Size"] = UDim2.new(0, 418, 0, 3);
+G2L["1e"]["Position"] = UDim2.new(-0.0004, 0, 0.28666, 0);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Name"] = [[line]];
+
+
+-- StarterGui.102596816252241.over1.Tab1.sellall
+G2L["1f"] = Instance.new("TextButton", G2L["14"]);
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["TextSize"] = 14;
+G2L["1f"]["AutoButtonColor"] = false;
+G2L["1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f"]["Size"] = UDim2.new(0, 118, 0, 44);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Text"] = [[Sell All Parts]];
+G2L["1f"]["Name"] = [[sellall]];
+G2L["1f"]["Position"] = UDim2.new(0.66526, 0, 0.67298, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab1.sellall.UICorner
+G2L["20"] = Instance.new("UICorner", G2L["1f"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab1.sellall.UIStroke
+G2L["21"] = Instance.new("UIStroke", G2L["1f"]);
+G2L["21"]["Thickness"] = 3;
+G2L["21"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["21"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab1.infp
+G2L["22"] = Instance.new("TextButton", G2L["14"]);
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["TextSize"] = 14;
+G2L["22"]["AutoButtonColor"] = false;
+G2L["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22"]["Size"] = UDim2.new(0, 118, 0, 44);
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Text"] = [[Infinite Parts]];
+G2L["22"]["Name"] = [[infp]];
+G2L["22"]["Position"] = UDim2.new(0.35297, 0, 0.67298, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab1.infp.UICorner
+G2L["23"] = Instance.new("UICorner", G2L["22"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab1.infp.UIStroke
+G2L["24"] = Instance.new("UIStroke", G2L["22"]);
+G2L["24"]["Thickness"] = 3;
+G2L["24"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["24"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab1.infm
+G2L["25"] = Instance.new("TextButton", G2L["14"]);
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["AutoButtonColor"] = false;
+G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25"]["Size"] = UDim2.new(0, 118, 0, 44);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Text"] = [[Infinite Cash]];
+G2L["25"]["Name"] = [[infm]];
+G2L["25"]["Position"] = UDim2.new(0.04306, 0, 0.67298, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab1.infm.UICorner
+G2L["26"] = Instance.new("UICorner", G2L["25"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab1.infm.UIStroke
+G2L["27"] = Instance.new("UIStroke", G2L["25"]);
+G2L["27"]["Thickness"] = 3;
+G2L["27"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["27"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab1.buyall
+G2L["28"] = Instance.new("TextButton", G2L["14"]);
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextSize"] = 14;
+G2L["28"]["AutoButtonColor"] = false;
+G2L["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["28"]["Size"] = UDim2.new(0, 118, 0, 44);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Text"] = [[Buy all]];
+G2L["28"]["Name"] = [[buyall]];
+G2L["28"]["Position"] = UDim2.new(0.04086, 0, 0.79715, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab1.buyall.UICorner
+G2L["29"] = Instance.new("UICorner", G2L["28"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab1.buyall.UIStroke
+G2L["2a"] = Instance.new("UIStroke", G2L["28"]);
+G2L["2a"]["Thickness"] = 3;
+G2L["2a"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["2a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab1.sclick
+G2L["2b"] = Instance.new("TextButton", G2L["14"]);
+G2L["2b"]["BorderSizePixel"] = 0;
+G2L["2b"]["TextSize"] = 14;
+G2L["2b"]["AutoButtonColor"] = false;
+G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b"]["Size"] = UDim2.new(0, 162, 0, 39);
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Text"] = [[Buy Soldiers]];
+G2L["2b"]["Name"] = [[sclick]];
+G2L["2b"]["Position"] = UDim2.new(0.09091, 0, 0.4446, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab1.sclick.UICorner
+G2L["2c"] = Instance.new("UICorner", G2L["2b"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab1.sclick.UIStroke
+G2L["2d"] = Instance.new("UIStroke", G2L["2b"]);
+G2L["2d"]["Thickness"] = 3;
+G2L["2d"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["2d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab1.samount
+G2L["2e"] = Instance.new("TextBox", G2L["14"]);
+G2L["2e"]["CursorPosition"] = -1;
+G2L["2e"]["Name"] = [[samount]];
+G2L["2e"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["TextWrapped"] = true;
+G2L["2e"]["TextSize"] = 14;
+G2L["2e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
+G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e"]["PlaceholderText"] = [[Enter Amount]];
+G2L["2e"]["Size"] = UDim2.new(0, 380, 0, 46);
+G2L["2e"]["Position"] = UDim2.new(0.04306, 0, 0.32373, 0);
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Text"] = [[]];
+
+
+-- StarterGui.102596816252241.over1.Tab1.samount.UICorner
+G2L["2f"] = Instance.new("UICorner", G2L["2e"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab1.line
+G2L["30"] = Instance.new("Frame", G2L["14"]);
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
+G2L["30"]["Size"] = UDim2.new(0, 418, 0, 3);
+G2L["30"]["Position"] = UDim2.new(-0.0004, 0, 0.57713, 0);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Name"] = [[line]];
+
+
+-- StarterGui.102596816252241.over1.Tab1.merges
+G2L["31"] = Instance.new("TextButton", G2L["14"]);
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["TextSize"] = 14;
+G2L["31"]["AutoButtonColor"] = false;
+G2L["31"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["31"]["Size"] = UDim2.new(0, 162, 0, 39);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Text"] = [[Merge Soldiers]];
+G2L["31"]["Name"] = [[merges]];
+G2L["31"]["Position"] = UDim2.new(0.51196, 0, 0.4446, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab1.merges.UICorner
+G2L["32"] = Instance.new("UICorner", G2L["31"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab1.merges.UIStroke
+G2L["33"] = Instance.new("UIStroke", G2L["31"]);
+G2L["33"]["Thickness"] = 3;
+G2L["33"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["33"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab1.collectnpc
+G2L["34"] = Instance.new("TextButton", G2L["14"]);
+G2L["34"]["TextWrapped"] = true;
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["AutoButtonColor"] = false;
+G2L["34"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["34"]["Size"] = UDim2.new(0, 118, 0, 44);
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Text"] = [[Collect All NPC Drops]];
+G2L["34"]["Name"] = [[collectnpc]];
+G2L["34"]["Position"] = UDim2.new(0.35187, 0, 0.79715, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab1.collectnpc.UICorner
+G2L["35"] = Instance.new("UICorner", G2L["34"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab1.collectnpc.UIStroke
+G2L["36"] = Instance.new("UIStroke", G2L["34"]);
+G2L["36"]["Thickness"] = 3;
+G2L["36"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["36"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab1.collectairdrop
+G2L["37"] = Instance.new("TextButton", G2L["14"]);
+G2L["37"]["TextWrapped"] = true;
+G2L["37"]["BorderSizePixel"] = 0;
+G2L["37"]["TextSize"] = 14;
+G2L["37"]["AutoButtonColor"] = false;
+G2L["37"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["37"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["37"]["Size"] = UDim2.new(0, 118, 0, 44);
+G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Text"] = [[Collect All Airdrops]];
+G2L["37"]["Name"] = [[collectairdrop]];
+G2L["37"]["Position"] = UDim2.new(0.66526, 0, 0.79715, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab1.collectairdrop.UICorner
+G2L["38"] = Instance.new("UICorner", G2L["37"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab1.collectairdrop.UIStroke
+G2L["39"] = Instance.new("UIStroke", G2L["37"]);
+G2L["39"]["Thickness"] = 3;
+G2L["39"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["39"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab2
+G2L["3a"] = Instance.new("Frame", G2L["2"]);
+G2L["3a"]["Visible"] = false;
+G2L["3a"]["BorderSizePixel"] = 0;
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["3a"]["Size"] = UDim2.new(0, 418, 0, 451);
+G2L["3a"]["Position"] = UDim2.new(0, 177, 0, 42);
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Name"] = [[Tab2]];
+
+
+-- StarterGui.102596816252241.over1.Tab2.UICorner
+G2L["3b"] = Instance.new("UICorner", G2L["3a"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab2.t2amount
+G2L["3c"] = Instance.new("TextBox", G2L["3a"]);
+G2L["3c"]["CursorPosition"] = -1;
+G2L["3c"]["Name"] = [[t2amount]];
+G2L["3c"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3c"]["BorderSizePixel"] = 0;
+G2L["3c"]["TextWrapped"] = true;
+G2L["3c"]["TextSize"] = 14;
+G2L["3c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
+G2L["3c"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3c"]["PlaceholderText"] = [[Enter Amount]];
+G2L["3c"]["Size"] = UDim2.new(0, 380, 0, 46);
+G2L["3c"]["Position"] = UDim2.new(0.04545, 0, 0.03548, 0);
+G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["Text"] = [[]];
+
+
+-- StarterGui.102596816252241.over1.Tab2.t2amount.UICorner
+G2L["3d"] = Instance.new("UICorner", G2L["3c"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab2.swp
+G2L["3e"] = Instance.new("TextButton", G2L["3a"]);
+G2L["3e"]["BorderSizePixel"] = 0;
+G2L["3e"]["TextSize"] = 14;
+G2L["3e"]["AutoButtonColor"] = false;
+G2L["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["3e"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3e"]["Size"] = UDim2.new(0, 162, 0, 39);
+G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3e"]["Text"] = [[Set Walkspeed]];
+G2L["3e"]["Name"] = [[swp]];
+G2L["3e"]["Position"] = UDim2.new(0.0933, 0, 0.15635, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab2.swp.UICorner
+G2L["3f"] = Instance.new("UICorner", G2L["3e"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab2.swp.UIStroke
+G2L["40"] = Instance.new("UIStroke", G2L["3e"]);
+G2L["40"]["Thickness"] = 3;
+G2L["40"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["40"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab2.sjpp
+G2L["41"] = Instance.new("TextButton", G2L["3a"]);
+G2L["41"]["BorderSizePixel"] = 0;
+G2L["41"]["TextSize"] = 14;
+G2L["41"]["AutoButtonColor"] = false;
+G2L["41"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["41"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["41"]["Size"] = UDim2.new(0, 162, 0, 39);
+G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["41"]["Text"] = [[Set Jumppower]];
+G2L["41"]["Name"] = [[sjpp]];
+G2L["41"]["Position"] = UDim2.new(0.51435, 0, 0.15635, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab2.sjpp.UICorner
+G2L["42"] = Instance.new("UICorner", G2L["41"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab2.sjpp.UIStroke
+G2L["43"] = Instance.new("UIStroke", G2L["41"]);
+G2L["43"]["Thickness"] = 3;
+G2L["43"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["43"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab2.line
+G2L["44"] = Instance.new("Frame", G2L["3a"]);
+G2L["44"]["BorderSizePixel"] = 0;
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
+G2L["44"]["Size"] = UDim2.new(0, 418, 0, 3);
+G2L["44"]["Position"] = UDim2.new(-0.0004, 0, 0.28666, 0);
+G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44"]["Name"] = [[line]];
+
+
+-- StarterGui.102596816252241.over1.Tab2.rj
+G2L["45"] = Instance.new("TextButton", G2L["3a"]);
+G2L["45"]["BorderSizePixel"] = 0;
+G2L["45"]["TextSize"] = 14;
+G2L["45"]["AutoButtonColor"] = false;
+G2L["45"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["45"]["Size"] = UDim2.new(0, 118, 0, 44);
+G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["Text"] = [[Rejoin]];
+G2L["45"]["Name"] = [[rj]];
+G2L["45"]["Position"] = UDim2.new(0.67082, 0, 0.32043, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab2.rj.UICorner
+G2L["46"] = Instance.new("UICorner", G2L["45"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab2.rj.UIStroke
+G2L["47"] = Instance.new("UIStroke", G2L["45"]);
+G2L["47"]["Thickness"] = 3;
+G2L["47"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["47"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab2.noclip
+G2L["48"] = Instance.new("TextButton", G2L["3a"]);
+G2L["48"]["BorderSizePixel"] = 0;
+G2L["48"]["TextSize"] = 14;
+G2L["48"]["AutoButtonColor"] = false;
+G2L["48"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["48"]["Size"] = UDim2.new(0, 118, 0, 44);
+G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Text"] = [[Noclip]];
+G2L["48"]["Name"] = [[noclip]];
+G2L["48"]["Position"] = UDim2.new(0.35694, 0, 0.32043, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab2.noclip.UICorner
+G2L["49"] = Instance.new("UICorner", G2L["48"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab2.noclip.UIStroke
+G2L["4a"] = Instance.new("UIStroke", G2L["48"]);
+G2L["4a"]["Thickness"] = 3;
+G2L["4a"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["4a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab2.fly
+G2L["4b"] = Instance.new("TextButton", G2L["3a"]);
+G2L["4b"]["BorderSizePixel"] = 0;
+G2L["4b"]["TextSize"] = 14;
+G2L["4b"]["AutoButtonColor"] = false;
+G2L["4b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["4b"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4b"]["Size"] = UDim2.new(0, 118, 0, 44);
+G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"]["Text"] = [[Fly]];
+G2L["4b"]["Name"] = [[fly]];
+G2L["4b"]["Position"] = UDim2.new(0.04547, 0, 0.32043, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab2.fly.UICorner
+G2L["4c"] = Instance.new("UICorner", G2L["4b"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab2.fly.UIStroke
+G2L["4d"] = Instance.new("UIStroke", G2L["4b"]);
+G2L["4d"]["Thickness"] = 3;
+G2L["4d"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["4d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab2.shop
+G2L["4e"] = Instance.new("TextButton", G2L["3a"]);
+G2L["4e"]["BorderSizePixel"] = 0;
+G2L["4e"]["TextSize"] = 14;
+G2L["4e"]["AutoButtonColor"] = false;
+G2L["4e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4e"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["4e"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4e"]["Size"] = UDim2.new(0, 118, 0, 44);
+G2L["4e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4e"]["Text"] = [[Server Hop]];
+G2L["4e"]["Name"] = [[shop]];
+G2L["4e"]["Position"] = UDim2.new(0.04325, 0, 0.4446, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab2.shop.UICorner
+G2L["4f"] = Instance.new("UICorner", G2L["4e"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab2.shop.UIStroke
+G2L["50"] = Instance.new("UIStroke", G2L["4e"]);
+G2L["50"]["Thickness"] = 3;
+G2L["50"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["50"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab2.tptool
+G2L["51"] = Instance.new("TextButton", G2L["3a"]);
+G2L["51"]["TextWrapped"] = true;
+G2L["51"]["BorderSizePixel"] = 0;
+G2L["51"]["TextSize"] = 14;
+G2L["51"]["AutoButtonColor"] = false;
+G2L["51"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["51"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["51"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["51"]["Size"] = UDim2.new(0, 118, 0, 44);
+G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["51"]["Text"] = [[TP Tool]];
+G2L["51"]["Name"] = [[tptool]];
+G2L["51"]["Position"] = UDim2.new(0.35583, 0, 0.4446, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab2.tptool.UICorner
+G2L["52"] = Instance.new("UICorner", G2L["51"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab2.tptool.UIStroke
+G2L["53"] = Instance.new("UIStroke", G2L["51"]);
+G2L["53"]["Thickness"] = 3;
+G2L["53"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["53"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab2.boostfps
+G2L["54"] = Instance.new("TextButton", G2L["3a"]);
+G2L["54"]["TextWrapped"] = true;
+G2L["54"]["BorderSizePixel"] = 0;
+G2L["54"]["TextSize"] = 14;
+G2L["54"]["AutoButtonColor"] = false;
+G2L["54"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["54"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["54"]["Size"] = UDim2.new(0, 118, 0, 44);
+G2L["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["54"]["Text"] = [[FPS Boost]];
+G2L["54"]["Name"] = [[boostfps]];
+G2L["54"]["Position"] = UDim2.new(0.67082, 0, 0.4446, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab2.boostfps.UICorner
+G2L["55"] = Instance.new("UICorner", G2L["54"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab2.boostfps.UIStroke
+G2L["56"] = Instance.new("UIStroke", G2L["54"]);
+G2L["56"]["Thickness"] = 3;
+G2L["56"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["56"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab3
+G2L["57"] = Instance.new("Frame", G2L["2"]);
+G2L["57"]["Visible"] = false;
+G2L["57"]["BorderSizePixel"] = 0;
+G2L["57"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["57"]["Size"] = UDim2.new(0, 418, 0, 451);
+G2L["57"]["Position"] = UDim2.new(0, 177, 0, 42);
+G2L["57"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["57"]["Name"] = [[Tab3]];
+
+
+-- StarterGui.102596816252241.over1.Tab3.UICorner
+G2L["58"] = Instance.new("UICorner", G2L["57"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab3.invite
+G2L["59"] = Instance.new("TextButton", G2L["57"]);
+G2L["59"]["BorderSizePixel"] = 0;
+G2L["59"]["TextSize"] = 14;
+G2L["59"]["AutoButtonColor"] = false;
+G2L["59"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["59"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["59"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["59"]["Size"] = UDim2.new(0, 370, 0, 41);
+G2L["59"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["59"]["Text"] = [[Copy Discord Invite]];
+G2L["59"]["Name"] = [[invite]];
+G2L["59"]["Position"] = UDim2.new(0.05742, 0, 0.28717, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab3.invite.UICorner
+G2L["5a"] = Instance.new("UICorner", G2L["59"]);
+
+
+
+-- StarterGui.102596816252241.over1.Tab3.invite.UIStroke
+G2L["5b"] = Instance.new("UIStroke", G2L["59"]);
+G2L["5b"]["Thickness"] = 3;
+G2L["5b"]["Color"] = Color3.fromRGB(36, 36, 36);
+G2L["5b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.102596816252241.over1.Tab3.line
+G2L["5c"] = Instance.new("Frame", G2L["57"]);
+G2L["5c"]["BorderSizePixel"] = 0;
+G2L["5c"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
+G2L["5c"]["Size"] = UDim2.new(0, 418, 0, 3);
+G2L["5c"]["Position"] = UDim2.new(-0.00279, 0, 0.24232, 0);
+G2L["5c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5c"]["Name"] = [[line]];
+
+
+-- StarterGui.102596816252241.over1.Tab3.title
+G2L["5d"] = Instance.new("TextLabel", G2L["57"]);
+G2L["5d"]["TextWrapped"] = true;
+G2L["5d"]["Interactable"] = false;
+G2L["5d"]["ZIndex"] = 2;
+G2L["5d"]["BorderSizePixel"] = 0;
+G2L["5d"]["TextSize"] = 15;
+G2L["5d"]["TextScaled"] = true;
+G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5d"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5d"]["BackgroundTransparency"] = 1;
+G2L["5d"]["RichText"] = true;
+G2L["5d"]["Size"] = UDim2.new(0, 187, 0, 29);
+G2L["5d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5d"]["Text"] = [[CREDITS]];
+G2L["5d"]["Name"] = [[title]];
+G2L["5d"]["Position"] = UDim2.new(0.27512, 0, 0.01552, 0);
+
+
+-- StarterGui.102596816252241.over1.Tab3.creds
+G2L["5e"] = Instance.new("TextBox", G2L["57"]);
+G2L["5e"]["CursorPosition"] = -1;
+G2L["5e"]["Interactable"] = false;
+G2L["5e"]["Name"] = [[creds]];
+G2L["5e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["5e"]["BorderSizePixel"] = 0;
+G2L["5e"]["TextEditable"] = false;
+G2L["5e"]["TextTruncate"] = Enum.TextTruncate.AtEnd;
+G2L["5e"]["TextSize"] = 14;
+G2L["5e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5e"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5e"]["MultiLine"] = true;
+G2L["5e"]["ClearTextOnFocus"] = false;
+G2L["5e"]["Size"] = UDim2.new(0, 252, 0, 23);
+G2L["5e"]["Position"] = UDim2.new(0.19856, 0, 0.1153, 0);
+G2L["5e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5e"]["Text"] = [[UI - Aldenaire Development]];
+
+
+-- StarterGui.102596816252241.over1.Tab3.creds
+G2L["5f"] = Instance.new("TextBox", G2L["57"]);
+G2L["5f"]["Interactable"] = false;
+G2L["5f"]["Name"] = [[creds]];
+G2L["5f"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["5f"]["BorderSizePixel"] = 0;
+G2L["5f"]["TextEditable"] = false;
+G2L["5f"]["TextTruncate"] = Enum.TextTruncate.AtEnd;
+G2L["5f"]["TextSize"] = 14;
+G2L["5f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
+G2L["5f"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["5f"]["MultiLine"] = true;
+G2L["5f"]["ClearTextOnFocus"] = false;
+G2L["5f"]["Size"] = UDim2.new(0, 252, 0, 23);
+G2L["5f"]["Position"] = UDim2.new(0.19856, 0, 0.1663, 0);
+G2L["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5f"]["Text"] = [[Scripting - Aldenaire Development]];
+
+
+-- StarterGui.102596816252241.Handler
+G2L["60"] = Instance.new("LocalScript", G2L["1"]);
+G2L["60"]["Name"] = [[Handler]];
+
+
+-- StarterGui.102596816252241.Handler
+local function C_60()
+local script = G2L["60"];
+	local gui = script.Parent
+	local mainf = gui.over1
+	local tabselection = mainf.Tabselection
+	local tab1 = mainf.Tab1
+	local tab2 = mainf.Tab2
+	local tab3 = mainf.Tab3
+	
+	local invite = game:HttpGet("https://raw.githubusercontent.com/IRSILVER/aldenaire/refs/heads/main/invite") 
+	
+	tab1.Visible = true
+	tabselection.Main.active.Visible = true
+	tab2.Visible = false
+	tabselection.Player.active.Visible = false
+	tab3.Visible = false
+	tabselection.Credits.active.Visible = false
+	
+	local function noti(text, duration)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Aldenaire Development";
+			Text = text;
+			Icon = "http://www.roblox.com/asset/?id=113598884841284";
+			Duration = duration or 5;
+		})
+	end
+	
+	local function switchtabs(tab)
+		if tab == "Main" then
+			tab1.Visible = true
+			tabselection.Main.active.Visible = true
+			tab2.Visible = false
+			tabselection.Player.active.Visible = false
+			tab3.Visible = false
+			tabselection.Credits.active.Visible = false
+		elseif tab == "Player" then
+			tab1.Visible = false
+			tabselection.Main.active.Visible = false
+			tab2.Visible = true
+			tabselection.Player.active.Visible = true
+			tab3.Visible = false
+			tabselection.Credits.active.Visible = false
+		elseif tab == "Credits" then
+			tab1.Visible = false
+			tabselection.Main.active.Visible = false
+			tab2.Visible = false
+			tabselection.Player.active.Visible = false
+			tab3.Visible = true
+			tabselection.Credits.active.Visible = true
+		end
+	end
+	
+	tabselection.Main.MouseButton1Click:Connect(function() switchtabs("Main") end)
+	tabselection.Player.MouseButton1Click:Connect(function() switchtabs("Player") end)
+	tabselection.Credits.MouseButton1Click:Connect(function() switchtabs("Credits") end)
+	
+	mainf.Draggable = true
+	
+	------------ TAB 1 --------------
+	local cashamount = tab1.mamount
+	local soldieramount = tab1.samount
+	local gc = tab1.mclick
+	local gp = tab1.pclick
+	local bs = tab1.sclick
+	local ms = tab1.merges
+	local infcash = tab1.infm
+	local infparts = tab1.infp
+	local sellall = tab1.sellall
+	local buyall = tab1.buyall
+	local collectallnpc = tab1.collectnpc
+	local collectairdrops = tab1.collectairdrop
+	
+	local function givecashamount(amount)
+		if tonumber(amount) then
+			noti("Attempting to give "..amount.." cash.")
+			for i = 1, 6 do
+				local args = {
+					workspace:WaitForChild("Tycoons"):WaitForChild("Tycoon"..tostring(i)),
+					tonumber(amount)
+				}
+				game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("TycoonSystem"):WaitForChild("Deposit"):FireServer(unpack(args))
+				game:GetService("ReplicatedStorage").Remotes.TycoonSystem.SellAll:FireServer()
+			end
+		else
+			noti("Invalid amount, please ensure it is a NUMBER.")
+		end
+	end
+	gc.MouseButton1Click:Connect(function() givecashamount(cashamount.Text) end)
+	
+	local function givepartamount(amount)
+		if tonumber(amount) then
+			noti("Attempting to give "..amount.." parts.")
+			game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("TycoonSystem"):WaitForChild("UpdateXPValue"):FireServer(tonumber(amount))
+		else
+			noti("Invalid amount, please ensure it is a NUMBER.")
+		end
+	end
+	gp.MouseButton1Click:Connect(function() givepartamount(cashamount.Text) end)
+	
+	local function buysoldieramount(amount)
+		if tonumber(amount) then
+			noti("Attempting to buy "..amount.." soldiers.")
+			for i = 1, 6 do
+				local args = {
+					workspace:WaitForChild("Tycoons"):WaitForChild("Tycoon"..tostring(i)),
+					tonumber(amount)
+				}
+				game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("TycoonSystem"):WaitForChild("AddCell"):FireServer(unpack(args))
+			end
+		else
+			noti("Invalid amount, please ensure it is a NUMBER.")
+		end
+	end
+	bs.MouseButton1Click:Connect(function() buysoldieramount(soldieramount.Text) end)
+	
+	local function mergesoldiers()
+		noti("Merging soldiers..")
+		for i = 1, 6 do
+			local args = {
+				workspace:WaitForChild("Tycoons"):WaitForChild("Tycoon"..tostring(i))
+			}
+			game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("TycoonSystem"):WaitForChild("Merge"):InvokeServer(unpack(args))
+		end
+	end
+	ms.MouseButton1Click:Connect(mergesoldiers)
+	
+	local function infinitecash()
+		noti("Giving infinite cash..")
+		for i = 1, 6 do
+			local args = {
+				workspace:WaitForChild("Tycoons"):WaitForChild("Tycoon"..tostring(i)),
+				math.huge
+			}
+			game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("TycoonSystem"):WaitForChild("Deposit"):FireServer(unpack(args))
+			game:GetService("ReplicatedStorage").Remotes.TycoonSystem.SellAll:FireServer()
+		end
+	end
+	infcash.MouseButton1Click:Connect(infinitecash)
+	
+	local function infiniteparts()
+		noti("Giving infinite parts..")
+		game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("TycoonSystem"):WaitForChild("UpdateXPValue"):FireServer(math.huge)
+	end
+	infparts.MouseButton1Click:Connect(infiniteparts)
+	
+	local RunService = game:GetService('RunService')
+	local npcdrops = workspace.NPCS.Cashy
+	local airdrops = workspace.ActiveAirdrops
+	local plr = game.Players.LocalPlayer
+	local char = plr.Character or plr.CharacterAdded:Wait()
+	local hrp = char:WaitForChild("HumanoidRootPart")
+	
+	_G.collectallnpc = false
+	local function togglenpc()
+		_G.collectallnpc = not _G.collectallnpc
+		noti(_G.collectallnpc and "Enabled NPC drop collection." or "Disabled NPC drop collection.")
+	end
+	collectallnpc.MouseButton1Click:Connect(togglenpc)
+	
+	_G.collectairdrops = false
+	local function toggleairdrops()
+		_G.collectairdrops = not _G.collectairdrops
+		noti(_G.collectairdrops and "Enabled Airdrop collection." or "Disabled Airdrop collection.")
+	end
+	collectairdrops.MouseButton1Click:Connect(toggleairdrops)
+	
+	_G.noclip = false
+	local function togglenoclip()
+		_G.noclip = not _G.noclip
+		noti(_G.noclip and "Enabled noclip." or "Disabled noclip.")
+		for _, part in pairs(char:GetDescendants()) do
+			if part:IsA("BasePart") then
+				part.CanCollide = not _G.noclip
+			end
+		end
+	end
+	
+	RunService.Heartbeat:Connect(function()
+		if _G.collectallnpc then
+			for _, npc in pairs(npcdrops:GetChildren()) do
+				if npc:FindFirstChild("Main") then
+					if npc:FindFirstChild("green") then
+						npc.green:Destroy()
+					else
+						local mainPart = npc.Main
+						mainPart.CanCollide = false
+						mainPart.Transparency = 1
+						for _, descendant in pairs(mainPart:GetDescendants()) do
+							if descendant:IsA("Decal") then
+								descendant:Destroy()
+							end
+						end
+	
+						mainPart.CFrame = hrp.CFrame
+					end
+				end
+			end
+		end
+	
+	
+		if _G.collectairdrops then
+			for _, airdrop in pairs(airdrops:GetChildren()) do
+				if airdrop:FindFirstChild("TouchPart") then
+					airdrop.TouchPart.CFrame = hrp.CFrame
+				end
+			end
+		end
+	
+		if _G.noclip then
+			for _, part in pairs(char:GetDescendants()) do
+				if part:IsA("BasePart") then
+					part.CanCollide = false
+				end
+			end
+		end
+	end)
+	
+	-------------- TAB2 --------------
+	local t2amount = tab2.t2amount
+	local swp = tab2.swp
+	local sjpp = tab2.sjpp
+	local flyb = tab2.fly
+	local noclipb = tab2.noclip
+	local rjb = tab2.rj
+	local shopb = tab2.shop
+	local tptoolb = tab2.tptool
+	local fpsboostb = tab2.boostfps
+	
+	local function changeplrattr(whattochange, value)
+		if tonumber(value) then
+			if whattochange == "Speed" then
+				char.Humanoid.WalkSpeed = tonumber(value)
+			elseif whattochange == "Jpower" then
+				char.Humanoid.JumpPower = tonumber(value)
+			end
+		else
+			noti("Invalid amount, please ensure it is a NUMBER.")
+		end
+	end
+	swp.MouseButton1Click:Connect(function() changeplrattr("Speed", t2amount.Text) end)
+	sjpp.MouseButton1Click:Connect(function() changeplrattr("Jpower", t2amount.Text) end)
+	
+	local flystate = false
+	local function fly()
+		local Plr = game.Players.LocalPlayer
+		local Camera = workspace.CurrentCamera
+		local Speed = 50
+		local HRP = Plr.Character:WaitForChild("HumanoidRootPart")
+		local FlyForce = Instance.new("BodyVelocity")
+		FlyForce.MaxForce = Vector3.new(1e5, 1e5, 1e5)
+		FlyForce.Parent = HRP
+		local GetMoveVector = require(Plr:WaitForChild("PlayerScripts").PlayerModule:WaitForChild("ControlModule"))
+		RunService.RenderStepped:Connect(function()
+			local MoveDir = GetMoveVector:GetMoveVector()
+			FlyForce.Velocity = Vector3.new()
+			FlyForce.Velocity = FlyForce.Velocity + Camera.CFrame.RightVector * MoveDir.X * Speed
+			FlyForce.Velocity = FlyForce.Velocity - Camera.CFrame.LookVector * MoveDir.Z * Speed
+		end)
+	end
+	local function unfly()
+		local HRP = plr.Character:WaitForChild("HumanoidRootPart")
+		if HRP:FindFirstChild("BodyVelocity") then
+			HRP.BodyVelocity:Destroy()
+		end
+	end
+	flyb.MouseButton1Click:Connect(function()
+		if flystate then
+			unfly()
+			noti("Disabled Fly.")
+		else
+			fly()
+			noti("Enabled Fly.")
+		end
+		flystate = not flystate
+	end)
+	
+	noclipb.MouseButton1Click:Connect(togglenoclip)
+	
+	rjb.MouseButton1Click:Connect(function()
+		game:GetService("TeleportService"):Teleport(game.PlaceId, plr)
+	end)
+	
+	local function serverhop()
+		local Player = plr
+		local Http = game:GetService("HttpService")
+		local TPS = game:GetService("TeleportService")
+		local Api = "https://games.roblox.com/v1/games/"
+		local _place,_id = game.PlaceId, game.JobId
+		local _servers = Api.._place.."/servers/Public?sortOrder=Desc&limit=100"
+		local function ListServers(cursor)
+			local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or ""))
+			return Http:JSONDecode(Raw)
+		end
+	
+		local Next
+		repeat
+			local Servers = ListServers(Next)
+			for _,v in pairs(Servers.data) do
+				if v.playing < v.maxPlayers and v.id ~= _id then
+					local s,r = pcall(TPS.TeleportToPlaceInstance, TPS, _place, v.id, Player)
+					if s then break end
+				end
+			end
+			Next = Servers.nextPageCursor
+		until not Next
+	end
+	shopb.MouseButton1Click:Connect(serverhop)
+	
+	local function givetptool()
+		if plr.Backpack:FindFirstChild("TpTool") then
+			noti("TpTool is already in your backpack!")
+		else
+			local mouse = plr:GetMouse()
+			local tool = Instance.new("Tool")
+			tool.RequiresHandle = false
+			tool.Name = "TpTool"
+			tool.Activated:Connect(function()
+				local pos = mouse.Hit + Vector3.new(0,2.5,0)
+				pos = CFrame.new(pos.X,pos.Y,pos.Z)
+				plr.Character.HumanoidRootPart.CFrame = pos
+			end)
+			tool.Parent = plr.Backpack
+		end
+	end
+	tptoolb.MouseButton1Click:Connect(givetptool)
+	
+	local function fpsboost()
+		local success, err = pcall(function()
+			settings().Rendering.QualityLevel = Enum.QualityLevel.Level01
+			for _, v in pairs(workspace:GetDescendants()) do
+				if v:IsA("ParticleEmitter") or v:IsA("Beam") or v:IsA("Trail") or v:IsA("SpecialMesh") or v:IsA("MeshPart") then
+					v:Destroy()
+				end
+			end
+			local lighting = game:GetService("Lighting")
+			lighting.FogEnd = 100000
+			lighting.GlobalShadows = false
+			lighting.OutdoorAmbient = Color3.new(1,1,1)
+			noti("FPS Boost applied: particles, meshes, and effects removed.")
+		end)
+		if not success then
+			noti("Failed to apply FPS boost: "..tostring(err))
+		end
+	end
+	
+	fpsboostb.MouseButton1Click:Connect(fpsboost)
+	
+	
+	
+	--------- TAB3 ---------
+	tab3.invite.MouseButton1Click:Connect(function()
+		local success, err = pcall(function()
+			setclipboard(invite)
+			noti("Copied discord invite to clipboard.")
+		end)
+	
+		if not success then
+			noti("Error copying to clipboard: "..tostring(err), 10)
+			noti("(This is most likely because your executor does not support setclipboard(). Here's the invite: "..invite..")",10)
+		end
+	end)
+	
+	local function close()
+		unfly()
+		_G.noclip = false
+		_G.collectairdrops = false
+		_G.collectallnpc = false
+		char.Humanoid.Health = 0
+		mainf.Parent:Destroy()
+	end
+	
+	mainf.close.MouseButton1Click:Connect(close)
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	local function toggleUI()
+		if mainf.Visible then
+			mainf.Visible = false
+			noti("UI Hidden, press Right-Shift to re-open the UI.")
+		else
+			mainf.Visible = true
+			noti("UI Visible.")
+		end
+	end
+	
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then return end
+		if input.KeyCode == Enum.KeyCode.RightShift then
+			toggleUI()
+		end
+	end)
+	
+	mainf.min.MouseButton1Click:Connect(toggleUI)
+	)
+end;
+task.spawn(C_60);
+
+return G2L["1"], require;
