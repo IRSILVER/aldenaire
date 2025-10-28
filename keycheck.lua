@@ -1,6 +1,14 @@
 local validKeys = {
-    [18142267] = "checking",
-    [987654321] = "checking2",
+    [18142267] = "key1",  
+    [987654321] = "key2",
 }
 
-return validKeys
+local blacklisted = {
+    [18142267] = "Abusive behavior",
+    [9876543210] = "Exploit usage",
+}
+
+return {
+    validKeys = validKeys,
+    blacklisted = blacklisted
+}
