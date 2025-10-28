@@ -4,7 +4,7 @@ local validKeys = {
 }
 
 local blacklisted = {
-    [18142267] = "Abusive behavior",
+    [9876543210] = "Abusive behavior",
     [9876543210] = "Exploit usage",
 }
 
