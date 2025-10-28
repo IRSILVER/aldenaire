@@ -1,6 +1,6 @@
 local validKeys = {
-    [123456789] = "your-valid-key-1",
-    [987654321] = "your-valid-key-2",
+    [18142267] = "checking",
+    [987654321] = "checking2",
 }
 
 local userId = tonumber(game:GetService("Players").LocalPlayer.UserId)
